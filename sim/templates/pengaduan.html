@@ -99,7 +99,7 @@
                 <td>{{data.subjek}}</td>
                 <td>{{data.kategori}}</td>
                 <td><a class="btn btn-outline-light" href="{{url_for('rmahasiswa.update_pengaduan', ed_id=data.id)}}">Edit</a></td>
-                <td><a class="btn btn-outline-danger" data-toggle="modal" data-target="#modals-hapus" href="klik_hapus({{data.id}})" >Hapus</a></td>
+                <td><a class="btn btn-outline-danger" data-toggle="modal" data-target="#modals-hapus" onclick="klik_hapus({{data.id}})" >Hapus</a></td>
               </tr>
               {%endfor%}
               <!-- modals Delete-->         

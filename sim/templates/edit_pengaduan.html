@@ -39,17 +39,17 @@
       </div>
 
       <div class="form-group">
-        {{form.detail_surat.label(class="form-control-label")}}
-        {% if form.detail_surat.errors %}
-            {{form.detail_surat(class="form-control is-invalid")}}
+        {{form.detail_pengaduan.label(class="form-control-label")}}
+        {% if form.detail_pengaduan.errors %}
+            {{form.detail_pengaduan(class="form-control is-invalid")}}
         
             <div class="invalid-feedback">
-                {% for error in form.detail_surat.errors %}
+                {% for error in form.detail_pengaduan.errors %}
                <span>{{error}}</span>
                 {% endfor %}
             </div>
         {% else %}
-            {{form.detail_surat(class="form-control")}}
+            {{form.detail_pengaduan(class="form-control")}}
 
         {% endif %}
       </div>
