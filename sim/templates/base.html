@@ -15,10 +15,10 @@
     -->
   </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(2, 58, 2); color:white">
       <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="/static/gambar1.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            <a class="navbar-brand" href="#" style="color: white;">
+                <img src="/static/gambar1.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top" >
                 Bootstrap
             </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,16 +27,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{{url_for('rmahasiswa.home')}}">Home</a>
+                <a class="nav-link active" aria-current="page" href="{{url_for('rmahasiswa.home')}}" style="color: white;">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{url_for('rmahasiswa.about')}}">About</a>
+                <a class="nav-link" href="{{url_for('rmahasiswa.about')}}" style="color: white;">About</a>
               </li>
               {% if current_user.is_authenticated %}
               -------------user
               {% else %}
               <li class="nav-item">
-                <a class="nav-link" href="{{url_for('rmahasiswa.login_mahasiswa')}}">Login Mahasiswa</a>
+                <a class="nav-link" href="{{url_for('rmahasiswa.login_mahasiswa')}}" style="color: white;">Login Mahasiswa</a>
               </li>
               {% endif %}
               <!--dropdown
